@@ -14,10 +14,15 @@ const frames = [
   [7, 2],
 ]
 
-function scoreFrame(Frame) {
-let Frame = Frame[0] + Frame[1]
 
-
+function scoreFrame(Frame, spareFrame) {
+  const spare = Frame[0] + Frame[1] === 10
+  const nextBall = 0
+  if (spareFrame) {
+    return Frame[0] + Frame[1] + nextBall
+  } else {
+    return Frame[0] + Frame[1]
+  }
 }
 
 function scoreTotal(Frames) {
