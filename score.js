@@ -13,4 +13,17 @@ const frames = [
   [7, 2],
 ]
 
-function scoreFrame(Frame) {}
+function scoreFrame(Frame) {
+ const gutterball = // check if gutter ball
+ let spare = // check if spare
+ let nextBall = //define next ball
+ // if gutterball or normal frame add as normal
+ // if else spare add nextBall
+}
+
+function scoreTotal(frames) {
+// running total to start at 0
+// loop through array of frames
+// on each frame run scoreFrame()
+// add frame to total and return final total
+}
