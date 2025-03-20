@@ -15,10 +15,11 @@ const frames = [
 ]
 
 
-function scoreFrame(Frame, spareFrame) {
+function scoreFrame(Frame, nextFrame) {
   const spare = Frame[0] + Frame[1] === 10
-  const nextBall = 0
-  if (spareFrame) {
+  let nextBall = 0
+  if (spare && nextFrame) {
+    nextBall = nextFrame[0]
     return Frame[0] + Frame[1] + nextBall
   } else {
     return Frame[0] + Frame[1]
