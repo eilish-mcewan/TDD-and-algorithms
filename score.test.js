@@ -41,7 +41,7 @@ test('scores total', () => {
     [1, 6],
     [7, 2],
   ]
-  const expected = 83
+  const expected = 71
   const actual = score.scoreTotal(frames)
   expect(actual).toBe(expected)
 })

@@ -1,5 +1,6 @@
 export { scoreFrame }
 export { scoreTotal }
+export { scoreFrames }
 
 const Frames = [
   [6, 1],
