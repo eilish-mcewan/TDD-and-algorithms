@@ -1,7 +1,7 @@
 export { scoreFrame }
 export { scoreTotal }
 
-const frames = [
+const Frames = [
   [6, 1],
   [4, 0],
   [6, 4],
@@ -28,8 +28,15 @@ function scoreFrame(Frame, nextFrame) {
 
 function scoreTotal(Frames) {
 // running total to start at 0
+let total = 0
 // loop through array of frames
-// on each frame run scoreFrame()
+for (let i = 0 ; i <= Frames.length - 1; i++) {
+ const currentFrame = Frames[i]
+ const nextFrame = Frames[i + 1]
+
+ total += scoreFrame(currentFrame, nextFrame)
+}
 // if spare add nextBall
+return total
 // add frame to total and return final total
 }
