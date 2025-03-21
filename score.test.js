@@ -22,8 +22,9 @@ test('scores a normal frame', () => {
 
 test('scores a spare', () => {
   const frame = [3, 7]
-  const expected = 10
-  const actual = score.scoreFrame(frame)
+  let nextframe = [5,0]
+  const expected = 15
+  const actual = score.scoreFrame(frame, nextframe)
   expect(actual).toBe(expected)
 })
 
